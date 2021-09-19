@@ -1,0 +1,14 @@
+<div class="card">
+    <img src="images/@Crew.Image" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">@Crew.Title</h5>
+        <p class="card-text">@Crew.Description</p>
+        <a href="warband/@Crew.Id" class="card-link">Show Crew</a>
+    </div>
+</div>
+
+@code {
+
+    [Parameter]
+    public Crew Crew { get; set; }
+}

@@ -1,0 +1,11 @@
+<div class="card-deck">
+    @foreach (var crew in Crews)
+    {
+        <CrewCard Crew="@crew" />
+    }
+</div>
+
+@code {
+    [Parameter]
+    public List<Crew> Crews { get; set; }
+}

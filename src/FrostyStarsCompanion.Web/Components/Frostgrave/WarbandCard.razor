@@ -1,0 +1,13 @@
+<div class="card">
+    <img src="images/@Warband.Image" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">@Warband.Title</h5>
+        <p class="card-text">@Warband.Description</p>
+        <a href="warband/@Warband.Id" class="card-link">Show Warband</a>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public Warband Warband { get; set; }
+}

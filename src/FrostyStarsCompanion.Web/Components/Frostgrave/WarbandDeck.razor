@@ -1,0 +1,10 @@
+<div class="card-deck">
+    @foreach (var warband in Warbands)
+    {
+        <WarbandCard Warband="@warband" />
+    }
+</div>
+
+@code {
+    [Parameter] public List<Warband> Warbands { get; set; }
+}

@@ -1,7 +1,9 @@
 ﻿@page "/"
+@inherits IndexBase
 
-<h1>Hello, world!</h1>
+<h1>Welcome to FrostyStars Companion</h1>
 
-Welcome to your new app.
+Pick your warband or crew:
 
-<SurveyPrompt Title="How is Blazor working for you?"/>
+<WarbandDeck Warbands="@ViewModel.Warbands" />
+<CrewDeck Crews="@ViewModel.Crews" />

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "bf2421f4-2c65-445f-b32f-242d88985bf6",
+    "name": "Death Shamblers",
+    "description": "A Necromancer and the apprentice",
+    "wizard": {
+    },
+    "apprentice": {
+    },
+    "soldiers": [
+    ],
+    "image": "necromancer.png"
+  }
+]
