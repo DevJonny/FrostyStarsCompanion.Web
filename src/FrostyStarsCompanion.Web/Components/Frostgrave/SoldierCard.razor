@@ -1,0 +1,65 @@
+<div class="card">
+    <img src="images/@WarbandId/@(Soldier.Id).png" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">@Soldier.SoldierType</h5>
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">Mv</th>
+                <th scope="col">Fi</th>
+                <th scope="col">Sh</th>
+                <th scope="col">Ar</th>
+                <th scope="col">Wi</th>
+                <th scope="col">HP</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>@Soldier.Stats.Move"</td>
+                <td>@Soldier.Stats.Fight</td>
+                <td>@Soldier.Stats.Shoot</td>
+                <td>@Soldier.Stats.Armour</td>
+                <td>@Soldier.Stats.Will</td>
+                <td>@Soldier.Stats.Health</td>
+            </tr>
+            </tbody>
+        </table>
+        @foreach(var weapon in Soldier.WeaponProfiles)
+        {
+            <table class="table">
+                <caption>@weapon.Notes</caption>
+                <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Damage Modifier</th>
+                    <th scope="col">Maximum Range</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>@weapon.Name</td>
+                    <td>@weapon.DamageModifier</td>
+                    <td>@weapon.MaximumRange</td>
+                </tr>
+                </tbody>
+            </table>
+        }
+    </div>
+</div>
+
+@code {
+
+    [Parameter]
+    public Guid WarbandId { get; set; } = Guid.Empty;
+
+    [Parameter]
+    public SoldierProfile Soldier { get; set; } = new()
+    {
+        Id = Guid.Empty,
+        Cost = 0,
+        Stats = new Stats(0, 0, 0, 0, 0, 0),
+        Weapons = Array.Empty<Weapon>(),
+        SoldierType = SoldierType.Archer
+    };
+
+}

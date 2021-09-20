@@ -7,4 +7,9 @@
 <div class="card-deck">
     <WizardCard WarbandId="@ViewModel.Warband.Id" Wizard="@ViewModel.Wizard" />
     <ApprenticeCard WarbandId="@ViewModel.Warband.Id" Apprentice="@ViewModel.Apprentice" />
+    
+    @foreach (var soldier in ViewModel.Soldiers)
+    {
+        <SoldierCard WarbandId="@ViewModel.Warband.Id" Soldier="@soldier" />
+    }
 </div>

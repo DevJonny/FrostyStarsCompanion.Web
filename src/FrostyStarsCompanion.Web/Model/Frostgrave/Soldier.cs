@@ -1,7 +1,6 @@
+using System;
+
 namespace FrostyStarsCompanion.Web.Model.Frostgrave
 {
-    public class Soldier
-    {
-        
-    }
+    public record Soldier(Guid Id, SoldierType Type);
 }

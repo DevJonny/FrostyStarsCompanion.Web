@@ -32,6 +32,12 @@
         "spells": []
       },
       "soldiers": [
+        { "id": "724c987a-5fc3-4a40-b493-761afbf48145", "type": "Archer" },
+        { "id": "ab4a8a0b-0cc7-4593-8cb0-f41e2492d897", "type": "Archer" },
+        { "id": "da15afdc-fd1c-45a0-85a0-c7a0153633bd", "type": "Infantryman" },
+        { "id": "8b56cde1-0a59-455f-9e0a-ea584f95cae5", "type": "MenAtArms" },
+        { "id": "49ac5570-d9d8-4c2c-8a59-c1f4be04d1eb", "type": "Thief" },
+        { "id": "96588392-60d2-4abe-8bb1-c3187b67ef12", "type": "Thug" }
       ]
     }
   ]

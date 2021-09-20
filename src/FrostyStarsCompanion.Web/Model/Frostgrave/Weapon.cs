@@ -3,6 +3,10 @@ namespace FrostyStarsCompanion.Web.Model.Frostgrave
     public enum Weapon
     {
         None,
-        Staff
+        Staff,
+        Bow,
+        Dagger,
+        TwoHandedWeapon,
+        HandWeapon
     }
 }
