@@ -1,6 +1,9 @@
-@page "/Warband"
-<h3>Warband</h3>
+@page "/warband/{id}"
 
-@code {
-    
-}
+@inherits WarbandBase
+
+<h3>@ViewModel.Title</h3>
+
+<div class="card-deck">
+    <WizardCard WarbandId="@ViewModel.Warband.Id" Wizard="@ViewModel.Wizard" />
+</div>

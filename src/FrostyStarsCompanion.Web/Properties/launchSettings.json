@@ -16,7 +16,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "FrostyStarsCompanion.Web": {
+    "FrostyStarsCompanion.Web2": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,

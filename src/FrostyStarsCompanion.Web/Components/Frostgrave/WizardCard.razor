@@ -1,0 +1,56 @@
+<div class="card">
+    <img src="images/@WarbandId/wizard.png" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">Wizard</h5>
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">Mv</th>
+                <th scope="col">Fi</th>
+                <th scope="col">Sh</th>
+                <th scope="col">Ar</th>
+                <th scope="col">Wi</th>
+                <th scope="col">HP</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>@Wizard.Stats.Move"</td>
+                <td>@Wizard.Stats.Fight</td>
+                <td>@Wizard.Stats.Shoot</td>
+                <td>@Wizard.Stats.Armour</td>
+                <td>@Wizard.Stats.Will</td>
+                <td>@Wizard.Stats.Health</td>
+            </tr>
+            </tbody>
+        </table>
+        <table class="table">
+            <caption>@Wizard.WeaponProfile.Notes</caption>
+            <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Damage Modifier</th>
+                <th scope="col">Maximum Range</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>@Wizard.WeaponProfile.Type</td>
+                <td>@Wizard.WeaponProfile.DamageModifier</td>
+                <td>@Wizard.WeaponProfile.MaximumRange</td>
+            </tr>
+            </tbody>
+        </table>
+        <a href="warband/@WarbandId/spells" class="card-link">Show Spells</a>
+    </div>
+</div>
+
+@code {
+
+    [Parameter]
+    public Guid WarbandId { get; set; } = Guid.Empty;
+
+    [Parameter]
+    public Wizard Wizard { get; set; } = new();
+
+}

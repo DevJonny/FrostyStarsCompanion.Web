@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Json;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using FrostyStarsCompanion.Web.Model.Frostgrave;
 
@@ -11,7 +13,7 @@ namespace FrostyStarsCompanion.Web.Services
     public class WarbandDataStore : IDataStore<Warband>
     {
         private readonly HttpClient _httpClient;
-        private List<Warband> _warbands = null;
+        private List<Warband> _warbands;
 
         public WarbandDataStore(HttpClient httpClient)
         {
@@ -31,12 +33,18 @@ namespace FrostyStarsCompanion.Web.Services
             if (_warbands is null)
                 await FetchData();
 
-            return _warbands.FirstOrDefault(w => w.Id == id);
+            return _warbands.FirstOrDefault(w => w.Id == id) ?? new Warband();
         }
 
         private async Task FetchData()
         {
-            _warbands = await _httpClient.GetFromJsonAsync<List<Warband>>("data/frostgrave.json");
+            var data = await _httpClient.GetFromJsonAsync<FrostgraveData>("data/frostgrave.json", new JsonSerializerOptions
+            {
+                Converters = { new JsonStringEnumConverter() },
+                PropertyNameCaseInsensitive = true
+            });
+
+            _warbands = data.Warbands;
         }
     }
 }

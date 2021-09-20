@@ -1,14 +1,38 @@
-[
-  {
-    "id": "bf2421f4-2c65-445f-b32f-242d88985bf6",
-    "name": "Death Shamblers",
-    "description": "A Necromancer and the apprentice",
-    "wizard": {
-    },
-    "apprentice": {
-    },
-    "soldiers": [
-    ],
-    "image": "necromancer.png"
-  }
-]
+{
+  "warbands": [
+    {
+      "id": "bf2421f4-2c65-445f-b32f-242d88985bf6",
+      "name": "Death Shamblers",
+      "description": "A Necromancer and the apprentice",
+      "wizard": {
+        "class": "Necromancer",
+        "weapon": "Staff",
+        "optionalWeapon": "None",
+        "stats": {
+          "move": 6,
+          "fight": 2,
+          "shoot": 0,
+          "armour": 10,
+          "will": 4,
+          "health": 14
+        },
+        "spells": []
+      },
+      "apprentice": {
+        "weapon": "Staff",
+        "optionalWeapon": "None",
+        "stats": {
+          "move": 6,
+          "fight": 0,
+          "shoot": -2,
+          "armour": 10,
+          "will": 2,
+          "health": 10
+        },
+        "spells": []
+      },
+      "soldiers": [
+      ]
+    }
+  ]
+}
