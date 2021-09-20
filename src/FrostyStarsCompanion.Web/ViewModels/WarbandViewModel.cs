@@ -7,5 +7,6 @@ namespace FrostyStarsCompanion.Web.ViewModels
         public Warband Warband { get; set; } = new();
         public string Title => Warband.Name;
         public Wizard Wizard => Warband.Wizard;
+        public Apprentice Apprentice => Warband.Apprentice;
     }
 }
