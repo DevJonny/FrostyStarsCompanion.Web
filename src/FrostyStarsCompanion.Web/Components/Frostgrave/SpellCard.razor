@@ -1,0 +1,11 @@
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">@Spell.Name (@Spell.CastingValue)</h5>
+        <h6 class="card-subtitle mb-2 text-muted">@Spell.School - @Spell.Category</h6>
+        <p class="card-text">@Spell.Description</p>
+    </div>
+</div>
+
+@code {
+    [Parameter] public Spell Spell { get; set; }
+}

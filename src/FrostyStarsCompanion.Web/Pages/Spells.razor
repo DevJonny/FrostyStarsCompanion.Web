@@ -1,0 +1,12 @@
+@page "/warband/{id}/spells/{isWizard}"
+
+@inherits SpellsBase
+
+<h3>Spells</h3>
+
+<div class="card-group">
+    @foreach (var spell in Spells)
+    {
+        <SpellCard Spell="spell" />
+    }
+</div>

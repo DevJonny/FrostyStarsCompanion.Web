@@ -16,7 +16,12 @@
           "will": 4,
           "health": 14
         },
-        "spells": []
+        "selectedSpells": {
+          "base": [ "BoneDart", "RaiseZombie", "StealHealth"],
+          "aligned": [ "Curse", "Decay", "FleetFeet", "Leap", "Possess"],
+          "neutral": [],
+          "opposed": []
+        }
       },
       "apprentice": {
         "weapon": "Staff",
@@ -29,7 +34,12 @@
           "will": 2,
           "health": 10
         },
-        "spells": []
+        "selectedSpells": {
+          "base": [ "BoneDart", "RaiseZombie", "StealHealth"],
+          "aligned": [ "Curse", "Decay", "FleetFeet", "Leap", "Possess"],
+          "neutral": [],
+          "opposed": []
+        }
       },
       "soldiers": [
         { "id": "724c987a-5fc3-4a40-b493-761afbf48145", "type": "Archer" },
