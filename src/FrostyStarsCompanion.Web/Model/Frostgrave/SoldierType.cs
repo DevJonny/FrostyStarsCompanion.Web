@@ -6,6 +6,7 @@ namespace FrostyStarsCompanion.Web.Model.Frostgrave
         Infantryman,
         MenAtArms,
         Thief,
-        Thug
+        Thug,
+        Zombie
     }
 }

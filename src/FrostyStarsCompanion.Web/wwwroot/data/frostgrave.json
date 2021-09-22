@@ -48,7 +48,8 @@
         { "id": "8b56cde1-0a59-455f-9e0a-ea584f95cae5", "type": "MenAtArms" },
         { "id": "49ac5570-d9d8-4c2c-8a59-c1f4be04d1eb", "type": "Thief" },
         { "id": "96588392-60d2-4abe-8bb1-c3187b67ef12", "type": "Thug" },
-        { "id": "e1978cb7-ae33-47f4-836b-abeac508009c", "type": "Thug" }
+        { "id": "e1978cb7-ae33-47f4-836b-abeac508009c", "type": "Thug" },
+        { "id": "1b045b0b-4131-45a1-a384-2ab58f944275", "type": "Zombie"}
       ]
     }
   ]

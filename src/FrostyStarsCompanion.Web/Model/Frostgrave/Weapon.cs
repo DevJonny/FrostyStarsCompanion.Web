@@ -7,6 +7,7 @@ namespace FrostyStarsCompanion.Web.Model.Frostgrave
         Bow,
         Dagger,
         TwoHandedWeapon,
-        HandWeapon
+        HandWeapon,
+        NaturalWeapon
     }
 }
