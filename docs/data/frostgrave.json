@@ -1,0 +1,56 @@
+{
+  "warbands": [
+    {
+      "id": "bf2421f4-2c65-445f-b32f-242d88985bf6",
+      "name": "Death Shamblers",
+      "description": "A Necromancer and the apprentice",
+      "wizard": {
+        "class": "Necromancer",
+        "weapon": "Staff",
+        "optionalWeapon": "None",
+        "stats": {
+          "move": 6,
+          "fight": 2,
+          "shoot": 0,
+          "armour": 10,
+          "will": 4,
+          "health": 14
+        },
+        "selectedSpells": {
+          "base": [ "BoneDart", "RaiseZombie", "StealHealth"],
+          "aligned": [ "Curse", "Decay", "FleetFeet", "Leap", "Possess"],
+          "neutral": [],
+          "opposed": []
+        }
+      },
+      "apprentice": {
+        "weapon": "Staff",
+        "optionalWeapon": "None",
+        "stats": {
+          "move": 6,
+          "fight": 0,
+          "shoot": -2,
+          "armour": 10,
+          "will": 2,
+          "health": 10
+        },
+        "selectedSpells": {
+          "base": [ "BoneDart", "RaiseZombie", "StealHealth"],
+          "aligned": [ "Curse", "Decay", "FleetFeet", "Leap", "Possess"],
+          "neutral": [],
+          "opposed": []
+        }
+      },
+      "soldiers": [
+        { "id": "724c987a-5fc3-4a40-b493-761afbf48145", "type": "Archer" },
+        { "id": "ab4a8a0b-0cc7-4593-8cb0-f41e2492d897", "type": "Archer" },
+        { "id": "da15afdc-fd1c-45a0-85a0-c7a0153633bd", "type": "Infantryman" },
+        { "id": "8b56cde1-0a59-455f-9e0a-ea584f95cae5", "type": "MenAtArms" },
+        { "id": "49ac5570-d9d8-4c2c-8a59-c1f4be04d1eb", "type": "Thief" },
+        { "id": "96588392-60d2-4abe-8bb1-c3187b67ef12", "type": "Thug" },
+        { "id": "e1978cb7-ae33-47f4-836b-abeac508009c", "type": "Thug" },
+        { "id": "1b045b0b-4131-45a1-a384-2ab58f944275", "type": "Zombie"}
+      ]
+    }
+  ]
+}
