@@ -1,0 +1,75 @@
+[
+    {
+        "type": "weapon",
+        "name": "Dagger",
+        "damageModifier": -1,
+        "notes": "First dagger does not take up an item slot.",
+        "description": "This is a knife or other small weapon such as a light club.\\nDaggers have a -1 damage modifier.\\nThe first dagger carried by a figure does not take up an item slot.\\nSo, a wizard can carry a dagger, plus up to five other items."
+    },
+    {
+        "type": "weapon",
+        "name": "Hand Weapon",
+        "description": "This includes any kind of weapon that is commonly wielded with one hand, including swords, scimitars, hand axes, maces, and even light spears.\\nThese weapons have no modifiers in combat."
+    },
+    {
+        "type": "weapon",
+        "name": "Two-Handed Weapon",
+        "damageModifier": 2,
+        "notes": "Takes up two item slots.",
+        "description": "This includes any kind of heavy melee weapon that requires two hands to wield, such as two-handed swords, battle-axes, polearms, large flails, and heavy spears.\\nThese weapons do +2 damage.\\nBecause they are so bulky, these weapons take up two item slots.\\nSo, a wizard carrying a two-handed weapon may only carry up to three other items."
+    },
+    {
+        "type": "weapon",
+        "name": "Staff",
+        "damageModifier": -1,
+        "notes": "-1 damage modifier to opponent in hand-to-hand combat",
+        "description": "The staff is better known for its defensive properties.\\nStaffs do -1 damage.\\nIn hand-to-hand combat, however, it also gives the opponent a -1 damage modifier.\\nThe staff does not give this modifier to shooting attacks.\\nThis category also includes magic staffs."
+    },
+    {
+        "type": "weapon",
+        "name": "Bow",
+        "maximumRange": 24,
+        "notes": "Load and fire as a single action; must have a quiver",
+        "description": "The most common form of missile weapon in Frostgrave is the bow.\\nThe game makes no distinction between types of bow, and players are free to depict them as longbows, composite bows, etc.\\nBows may be loaded and fired in a single action.\\nFor game purposes, the maximum range of a bow is 24\u201d, as there should never be more than 24\u201d of open line of sight anywhere in the close confines of the Frozen City.\\nIn order to use a bow, a figure must also be carrying a quiver (which fills another item slot) or some type of magic ammunition."
+    },
+    {
+        "type": "weapon",
+        "name": "Crossbow",
+        "damageModifier": 2,
+        "maximumRange": 24,
+        "notes": "Load and fire as separate actions; may reload in place of movement; must have a quiver",
+        "description": "Crossbows take one action to load and one action to fire.\\nIf a figure wishes, it may replace its movement action with a \u2018reload\u2019 action.\\nCrossbows have a +2 damage modifier.\\nCrossbows also have a maximum range of 24\u201d.\\nIt is assumed that all crossbows start the game loaded and ready to fire.\\nIn order to use a crossbow, a figure must also be carrying a quiver (which fills another item slot) or some type of magic ammunition."
+    },
+    {
+        "type": "item",
+        "name": "Quiver",
+        "description": "Quivers are designed to carry arrows or crossbow bolts.\\nA figure carrying a bow or crossbow must also carry a quiver, or some type of magic ammunition, in order to make shooting attacks.\\nA figure with a quiver may carry one piece of magic ammunition, one magic arrow or crossbow bolt, without it taking up an item slot."
+    },
+    {
+        "type": "weapon",
+        "name": "Unarmed",
+        "damageModifier": -2,
+        "notes": "-2 Fight",
+        "description": "If a model ends up with no weapons, it can fight as normal but suffers -2 Fight and a -2 damage modifier.\\nCreatures that have no weapons listed in their notes fight with natural weapons and are thus never counted as unarmed."
+    },
+    {
+        "type": "armour",
+        "name": "Shield",
+        "armourModifier": 1,
+        "notes": "May not be carried with a two-handed weapon or staff",
+        "description": "This can be any type of shield from a small buckler to a large tower shield.\\nA figure that is carrying a shield receives +1 Armour, but may not also carry a twohanded weapon or a staff.\\nSpellcasters may not carry shields."
+    },
+    {
+        "type": "armour",
+        "name": "Light Armour",
+        "armourModifier": 1,
+        "description": "This represents any type of lighter armour that is mostly made from leather or other non-metal material.\\nA figure wearing light armour receives +1 Armour.\\nSpellcasters may not wear light armour."
+    },
+    {
+        "type": "armour",
+        "name": "Heavy Armour",
+        "armourModifier": 2,
+        "notes": "-1 Move",
+        "description": "This represents any type of heavier armour, typically made from metal.\\nA figure wearing heavy armour receives +2 Armour but suffers -1 Move.\\nSpellcasters may not wear heavy armour."
+    }
+]

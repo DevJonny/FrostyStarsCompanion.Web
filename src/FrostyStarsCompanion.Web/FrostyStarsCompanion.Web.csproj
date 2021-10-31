@@ -15,4 +15,13 @@
         <ServiceWorker Include="wwwroot\service-worker.js" PublishedContent="wwwroot\service-worker.published.js" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Content Include="..\..\data\Backgrounds.json">
+        <Link>data\Backgrounds.json</Link>
+      </Content>
+      <Content Include="..\..\data\Weapons.json">
+        <Link>data\Weapons.json</Link>
+      </Content>
+    </ItemGroup>
+
 </Project>

@@ -1,0 +1,64 @@
+{
+  "crews": [
+    {
+      "id": "d3ffb406-58c3-4bf1-af72-500f10f354eb",
+      "name": "Clones",
+      "description": "Clone Troopers",
+      "captain": {
+        "name": "Captain Rex",
+        "class": "Veteran",
+        "equipment": [
+          "Carbine",
+          "Knife",
+          "Heavy Armour"
+        ],
+        "stats": {
+          "move": 6,
+          "fight": 3,
+          "shoot": 2,
+          "armour": 9,
+          "will": 3,
+          "health": 16
+        },
+        "selectedPowers": {
+          "core": ["Coordinated Fire", "EnergyShield", "TargetDesignation"],
+          "nonCore": [],
+          "empowered": ["Armoury"],
+          "nonCoreEmpowered": ["Concealed Firearm"]
+        }
+      },
+      "firstMate": {
+        "name": "Commander Wolffe",
+        "class": "RoboticsExpert",
+        "equipment": [
+          "Carbine",
+          "Knife",
+          "Heavy Armour"
+        ],
+        "stats": {
+          "move": 6,
+          "fight": 3,
+          "shoot": 2,
+          "armour": 9,
+          "will": 3,
+          "health": 16
+        },
+        "selectedPowers": {
+          "core": ["Coordinated Fire", "EnergyShield", "TargetDesignation"],
+          "nonCore": [],
+          "empowered": ["Armoury"],
+          "nonCoreEmpowered": ["Concealed Firearm"]
+        }
+      },
+      "soldiers": [
+        { "id": "37084a99-1a47-40a9-a48b-6833f11ad15d", "name": "Omega", "type": "Grenadier" },
+        { "id": "28eb74e9-f18f-47ba-ad66-ba1482b64ad8", "name": "Wrecker", "type": "Gunner" },
+        { "id": "f90f5dbd-e38a-44fa-8f78-434f41d492ca", "name": "Crosshair", "type": "Trooper" },
+        { "id": "9db0cc91-ad63-45ac-b62f-2a07915272d7", "name": "Fives", "type": "Trooper" },
+        { "id": "3b11f823-bb38-4d0c-83a8-0d6b3fe3c13f", "name": "Hunter", "type": "Trooper" },
+        { "id": "b0c46aad-c4d4-44f7-a2ec-bfd475a9ac8c", "name": "Tech", "type": "Hacker" },
+        { "id": "66209e66-199c-4235-81bb-d7a081ac1f60", "name": "Echo", "type": "Chiseler" }
+      ]
+    }
+  ]
+}
